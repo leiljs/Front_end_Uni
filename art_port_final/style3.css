@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #4D6CFA;
+    background: linear-gradient();
+}
+/*header*/
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    color: #ffff;
+    font-size: 28px;
+}
+.logo span{
+    color: gold;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+header nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    color: gold;
+    transition: .3s;
+}
+header button{
+    border: none;
+    background: #2E003E;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+header button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+/*intro*/
+.intro-container{
+    width: 100%;
+    height: 100vh;
+}
+.intro{
+    width: 70%;
+    margin: 0 auto;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 0px 10px 25px black;
+}
+.intro h1{
+    font-size: 4.6em;
+    font-weight: 900;
+    margin-top: 25%;
+    font-family: Arial,sans-serif;
+}
+.intro h4{
+    margin-top: 10px;
+    word-spacing: 15px;
+    letter-spacing: 7px;
+}
+/*form*/
+.upbox{
+    width: 100%;
+    height: 100vh;
+
+}
+#formy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs{
+    width: 60%;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background: rgba(256, 256, 256, 0.2);
+    border-radius: 20px;
+}
+label{
+    font-size: 2em;
+    font-weight: 600;
+}
+input{
+    height: 30px;
+    width: 20em;
+}
+.ininputs{
+    display: flex;
+    gap: 25px;
+    padding-left: 5px;
+}
+#finput{
+    display: none;
+}
+#uplab{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 1.5px;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 25px black;
+    border-radius: 3px;
+    margin-top: 40px;
+}
+/*gallery*/
+.gallery{
+    width: 100%;
+    min-height: 100vh;
+}
+.gallery h1{
+    font-size: 5em;
+    word-spacing: 30px;
+    letter-spacing: 10px;
+    padding: 0 25%;
+    color: #ffff;
+    font-family: cursive;
+}
+#artwork{
+    background: rgba(256 , 256, 256, 0.5);
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+.imagecontainer{
+    width: 90%;
+    height: 700px;
+    overflow: hidden;
+    padding-left: 8em;
+    margin-top: 18px;
+}
+.imagecontainer img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+#artwork h2{
+    font-size: 2.6em;
+    font-weight: 700;
+    padding-left: 3em;
+    padding-top: 2em;
+}
+#artwork h4{
+    font-size: 1.4em;
+    padding-left: 5.5em;
+}
+/*footer*/
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  }
+  #sculph1{
+    margin-top: 80px;
+  }

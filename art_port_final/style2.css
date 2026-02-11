@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: absolute;
+    width: 100%;
+}
+.logo{
+    color: #ffff;
+    font-size: 28px;
+}
+.logo span{
+    color: gold;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+header nav ul li a{
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li a:hover{
+    color: gold;
+    transition: .3s;
+}
+header button{
+    border: none;
+    background: #2E003E;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+header button:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+} 
+
+/* the body background*/
+.bgcontainer{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,#102E4A , black, #402E7A, #adc6f0);
+    background-size: 300% 300%;
+    animation: color 8s ease-in-out infinite;
+    color: #ffff;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.main{
+    padding: 100px 200px;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/pnts.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+    font-size: 6.2em;
+    font-weight: 800;
+    color: #ffff;
+    letter-spacing: 0.25em;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    font-family: cursive;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 95vh;
+    background-color: #ffff;
+    box-shadow: 5px;
+    max-width: 65em;
+    font-family: cursive;
+}
+.description h3{
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #2E003E;
+    padding: 2.6em;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: cursive;
+    padding-left: 25%;
+}
+.description h1{
+    font-size: 3em;
+    font-weight: 800;
+    padding-left: 24%;
+}
+/* The slider*/
+.work{
+    padding: 2em;
+}
+.wtitle{
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: 500;
+    padding-left: 7em;
+}
+.more{
+    padding: 1.2em;
+    padding-left: 14em;
+}
+.more a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.1em;
+    font-weight: 400;
+} 
+.more a:hover{
+    color: yellow;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider p{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: block;
+    text-align: left;
+    padding: 3.4em;
+    padding-top: 5px;
+    font-size: 1.5em;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+/*music page*/
+.main2{
+    padding: 100px 200px;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/musicc.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main2 h1{
+    font-size: 6.2em;
+    font-weight: 800;
+    color: #ffff;
+    letter-spacing: 0.25em;
+    font-family: cursive;
+}
+/* Sculpure page*/
+.main3{
+    padding: 100px 200px;
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/liberty.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main3 h1{
+    font-size: 6.2em;
+    font-weight: 800;
+    color: whitesmoke;
+    letter-spacing: 0.25em;
+    font-family: cursive;
+    text-shadow: -10px -5px 10px black;
+}
+.bgcontainer2{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #DBA159,black, #B27C66, #EFD780);
+    background-size: 300% 300%;
+    animation: color 8s ease-in-out infinite;
+    color: #ffff;
+}
+.bgcontainer3{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #16425B,black, #3A7CA5, #D9DCD6);
+    background-size: 300% 300%;
+    animation: color 8s ease-in-out infinite;
+    color: #ffff;
+}
+/*footer*/
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #4CAF50;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+    }
+  }
+  #sculph1{
+    margin-top: 80px;
+  }
